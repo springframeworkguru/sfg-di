@@ -14,6 +14,9 @@ public class SetterInjectedController {
 
     private IGreetingService greetingService;
 
+    /**
+     * Area of much debate.
+     */
     @Autowired
     public void setGreetingService(IGreetingService greetingService) {
         this.greetingService = greetingService;

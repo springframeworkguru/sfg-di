@@ -11,8 +11,14 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class ConstructorInjectedController {
 
+    /**
+     * Use final is a good practice.
+     */
     private final IGreetingService greetingService;
 
+    /**
+     * Most preferred.
+     */
     public ConstructorInjectedController(IGreetingService greetingService) {
         this.greetingService = greetingService;
     }

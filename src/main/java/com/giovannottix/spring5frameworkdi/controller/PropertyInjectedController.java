@@ -12,6 +12,9 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class PropertyInjectedController {
 
+    /**
+     * Least preferred.
+     */
     @Autowired
     public IGreetingService greetingService;
 
