@@ -1,10 +1,8 @@
 package com.melvyn.sfgdi.controllers;
 
-import com.melvyn.sfgdi.services.GreetingServiceImpl;
+import com.melvyn.sfgdi.services.ConstructorInjectedGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 /*
     Using this to show Setter Dependency Injection, we are mimicking what the Spring Framework would be doing.
     This is NOT the way you want to be doing it.
@@ -21,7 +19,7 @@ class SetterInjectedControllerTest {
     void setUp () {
 
         controller = new SetterInjectedController ();
-        controller.setGreetingService (new GreetingServiceImpl ());  // Instantiating the controller object to inject
+        controller.setGreetingService (new ConstructorInjectedGreetingService ());  // Instantiating the controller object to inject
                                                                      // the new GreetingServiceImpl implementation
 
     }

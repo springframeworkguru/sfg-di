@@ -1,6 +1,6 @@
 package com.melvyn.sfgdi.controllers;
 
-import com.melvyn.sfgdi.services.GreetingServiceImpl;
+import com.melvyn.sfgdi.services.ConstructorInjectedGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 /*
@@ -18,7 +18,7 @@ class PropertyInjectedControllerTest {
     @BeforeEach
     void setup() {
         controller = new PropertyInjectedController ();          // Creating the object
-        controller.greetingService = new GreetingServiceImpl (); // Creating the instance
+        controller.greetingService = new ConstructorInjectedGreetingService (); // Creating the instance
     }
 
     @Test

@@ -3,7 +3,10 @@ package com.melvyn.sfgdi;
 	Dependency Injection
 	Initially setup by Spring modified by Melvyn
  */
+import com.melvyn.sfgdi.controllers.ConstructorInjectedController;
 import com.melvyn.sfgdi.controllers.MyController;
+import com.melvyn.sfgdi.controllers.PropertyInjectedController;
+import com.melvyn.sfgdi.controllers.SetterInjectedController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -25,6 +28,28 @@ public class SfgDiApplication {
 		String greeting = myController.sayHello ();
 		//	Outputs the return value from the method above 'Hi Folks!'
 		System.out.println (greeting);
+
+		//============================================================================================================
+		// Testing The Property, Setter and Constructor InjectedControllers using Spring Framework DI
+
+		System.out.println ("------ Property");
+		PropertyInjectedController propertyInjectedController = (PropertyInjectedController)
+				ctx.getBean ("propertyInjectedController");
+		System.out.println (propertyInjectedController.getGreeting ());
+
+		System.out.println ("------ Setter");
+		SetterInjectedController setterInjectedController = (SetterInjectedController)
+				ctx.getBean ("setterInjectedController");
+		System.out.println (setterInjectedController.getGreeting ());
+
+		System.out.println ("------ Constructor");
+		ConstructorInjectedController constructorInjectedController = (ConstructorInjectedController)
+				ctx.getBean ("constructorInjectedController");
+		System.out.println (constructorInjectedController.getGreeting ());
+
+		// We now have four Spring Beans in the ApplicationContext 'ctx'
+		// You can have two ApplicationContext in an application.
+
 
 	}
 
