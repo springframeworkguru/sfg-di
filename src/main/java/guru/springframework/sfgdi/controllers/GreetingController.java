@@ -2,41 +2,44 @@ package guru.springframework.sfgdi.controllers;
 
 import guru.springframework.sfgdi.services.GreetingService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 @Controller
 public class GreetingController {
 
-    private final GreetingService greetingService;
+    private final GreetingService helloGreetingService;
 
     //Property based injection with spring
+    @Qualifier("byeGreetingService")
     @Autowired
-    public GreetingService greetingServiceProperty;
+    public GreetingService byeGreetingService;
 
-    private  GreetingService greetingServiceSetter;
+    private  GreetingService whatsUpGreetingService;
 
     //Setter based injection
+    @Qualifier("whatUpGreetingService")
     @Autowired
     public void setGreetingServiceSetter(GreetingService greetingServiceSetter) {
-        this.greetingServiceSetter = greetingServiceSetter;
+        this.whatsUpGreetingService = greetingServiceSetter;
     }
 
     //ctor injected no @autoWired annotation required.
-    public  GreetingController(GreetingService greetingService) {
-        this.greetingService = greetingService;
+    public  GreetingController(@Qualifier("helloGreetingService") GreetingService greetingService) {
+        this.helloGreetingService = greetingService;
 
     }
 
     public String sayHello() {
-        return greetingService.sayHello();
+        return helloGreetingService.sayGreeting();
     }
 
     public String sayBye() {
-        return greetingServiceProperty.sayBye();
+        return byeGreetingService.sayGreeting();
     }
 
     public String sayWhatsUp() {
-        return greetingServiceSetter.sayWhatsUP();
+        return whatsUpGreetingService.sayGreeting();
     }
 
 }

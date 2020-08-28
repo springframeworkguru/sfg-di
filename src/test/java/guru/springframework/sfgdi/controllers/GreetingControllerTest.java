@@ -1,12 +1,9 @@
 package guru.springframework.sfgdi.controllers;
 
-import guru.springframework.sfgdi.services.GreetingService;
-import guru.springframework.sfgdi.services.GreetingServiceImpl;
+import guru.springframework.sfgdi.services.HelloGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.util.Assert;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class GreetingControllerTest {
 
@@ -14,7 +11,7 @@ class GreetingControllerTest {
 
     @BeforeEach
     void setUp() {
-        greetingController = new GreetingController(new GreetingServiceImpl());
+        greetingController = new GreetingController(new HelloGreetingService());
     }
 
     @Test
