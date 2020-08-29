@@ -25,7 +25,7 @@ public class GreetingController {
     }
 
     //ctor injected no @autoWired annotation required.
-    public  GreetingController(@Qualifier("helloGreetingService") GreetingService greetingService) {
+    public  GreetingController(GreetingService greetingService) {
         this.helloGreetingService = greetingService;
 
     }
