@@ -1,5 +1,6 @@
 package guru.springframework.sfgdi.controllers;
 
+import components.ExternalComponent;
 import guru.springframework.sfgdi.services.LocalEnvironmentService;
 import guru.springframework.sfgdi.services.ProductionEnvironmentService;
 import org.junit.jupiter.api.BeforeEach;
@@ -16,7 +17,7 @@ class ConfigurationControllerTest {
     void getEnvironmentConfigRunning_returns_config_when_local_environment_service_used() {
 
         //arrange
-        ConfigurationController configurationController = new ConfigurationController(new LocalEnvironmentService());
+        ConfigurationController configurationController = new ConfigurationController(new LocalEnvironmentService(), new ExternalComponent());
 
         //act
         String result = configurationController.getEnvironmentConfigRunning();
@@ -30,7 +31,7 @@ class ConfigurationControllerTest {
     void getEnvironmentConfigRunning_returns_config_when_production_environment_service_used() {
 
         //arrange
-        ConfigurationController configurationController = new ConfigurationController(new ProductionEnvironmentService());
+        ConfigurationController configurationController = new ConfigurationController(new ProductionEnvironmentService(), new ExternalComponent());
 
         //act
         String result = configurationController.getEnvironmentConfigRunning();
