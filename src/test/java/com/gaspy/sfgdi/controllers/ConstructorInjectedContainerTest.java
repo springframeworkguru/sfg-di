@@ -1,6 +1,6 @@
 package com.gaspy.sfgdi.controllers;
 
-import com.gaspy.sfgdi.services.GreetingServiceImpl;
+import com.gaspy.sfgdi.services.ConstructorInjectedGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -10,7 +10,7 @@ class ConstructorInjectedContainerTest {
 
     @BeforeEach
     void setUp() {
-        controller = new ConstructorInjectedController(new GreetingServiceImpl());
+        controller = new ConstructorInjectedController(new ConstructorInjectedGreetingService());
     }
 
     @Test
