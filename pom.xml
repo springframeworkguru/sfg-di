@@ -15,7 +15,11 @@
 	<description>Dependency Injection examples</description>
 
 	<properties>
+<<<<<<< Updated upstream
 		<java.version>11</java.version>
+=======
+		<java.version>8</java.version>
+>>>>>>> Stashed changes
 	</properties>
 
 	<dependencies>
