@@ -6,14 +6,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class PropertyInjectionControllerTest {
+class ConstructorInjectedControllerTest {
 
-    PropertyInjectionController controller;
+    ConstructorInjectedController controller;
 
     @BeforeEach
     void setUp() {
-        controller = new PropertyInjectionController();
-        controller.greetingService = new GreetingServiceImpl();
+        controller = new ConstructorInjectedController(new GreetingServiceImpl());
     }
 
     @Test
