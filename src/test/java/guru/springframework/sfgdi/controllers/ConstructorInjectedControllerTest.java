@@ -10,7 +10,6 @@ class ConstructorInjectedControllerTest {
 
     @BeforeEach
     void setUp() {
-
         controller = new ConstructorInjectedController(new ConstructorGreetingService());
     }
 
@@ -18,5 +17,6 @@ class ConstructorInjectedControllerTest {
     void getGreeting() {
 
         System.out.println(controller.getGreeting());
+
     }
 }

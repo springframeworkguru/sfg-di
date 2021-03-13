@@ -1,10 +1,12 @@
 package guru.springframework.sfgdi.controllers;
 
 import guru.springframework.sfgdi.services.GreetingService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 
-@Component
+/**
+ * Created by jt on 12/26/19.
+ */
+@Controller
 public class MyController {
 
     private final GreetingService greetingService;
@@ -13,8 +15,7 @@ public class MyController {
         this.greetingService = greetingService;
     }
 
-    public String sayHello() {
+    public String sayHello(){
         return greetingService.sayGreeting();
     }
-
 }
