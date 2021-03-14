@@ -1,32 +1,47 @@
 package guru.springframework.sfgdi.config;
 
-import com.springframework.pets.CatPetService;
-import com.springframework.pets.DogPetService;
+import com.springframework.pets.PetService;
+import com.springframework.pets.PetServiceFactory;
 import guru.springframework.sfgdi.repositories.GreetingServiceRepository;
 import guru.springframework.sfgdi.repositories.GreetingServiceRepositoryImpl;
 import guru.springframework.sfgdi.services.*;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
-import org.springframework.context.annotation.Profile;
+import org.springframework.context.annotation.*;
 
+@ImportResource("classpath:sfgdi-config.xml")
 @Configuration
 public class GreetingServiceConfig {
+
+    @Bean
+    PetServiceFactory petServiceFactory() {
+        return new PetServiceFactory();
+    }
+
+    @Profile("cat")
+    @Bean
+    PetService catPetService() {
+        return petServiceFactory().getPetService("cat");
+    }
+
+    @Profile({"dog", "default"})
+    @Bean
+    PetService dogPetService() {
+        return petServiceFactory().getPetService("dog");
+    }
 
     @Bean
     GreetingServiceRepositoryImpl greetingServiceRepository() {
         return new GreetingServiceRepositoryImpl();
     }
 
-    @Bean
-    ConstructorGreetingService constructorGreetingService() {
-        return new ConstructorGreetingService();
-    }
-
     @Primary
     @Bean
     PrimaryGreetingService primaryGreetingService() {
         return new PrimaryGreetingService();
+    }
+
+//    @Bean
+    ConstructorGreetingService constructorGreetingService() {
+        return new ConstructorGreetingService();
     }
 
     @Bean
@@ -37,18 +52,6 @@ public class GreetingServiceConfig {
     @Bean
     SetterInjectedGreetingService setterInjectedGreetingService() {
         return new SetterInjectedGreetingService();
-    }
-
-    @Profile("cat")
-    @Bean
-    CatPetService catPetService() {
-        return new CatPetService();
-    }
-
-    @Profile({"dog", "default"})
-    @Bean
-    DogPetService dogPetService() {
-        return new DogPetService();
     }
 
     @Profile("EN")
