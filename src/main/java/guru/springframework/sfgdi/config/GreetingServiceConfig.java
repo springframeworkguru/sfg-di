@@ -5,15 +5,13 @@ import com.springframework.pets.PetServiceFactory;
 import guru.springframework.sfgdi.repositories.EnglishGreetingRepository;
 import guru.springframework.sfgdi.repositories.EnglishGreetingRepositoryImpl;
 import guru.springframework.sfgdi.services.*;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
-import org.springframework.context.annotation.Profile;
+import org.springframework.context.annotation.*;
 
 /**
  * User: p_sha
  * Date: Thu 18 Mar 2021
  */
+@ImportResource("classpath:sfg-di-config.xml")
 @Configuration
 public class GreetingServiceConfig {
 
@@ -59,10 +57,10 @@ public class GreetingServiceConfig {
 
 
     // Use @Bean annotation here and remoce the @Service from class...
-    @Bean
-    ConstructorGreetingService constructorGreetingService() {
-        return new ConstructorGreetingService();
-    }
+    // moved this bean to .xml file to show spring config alternative
+    //    ConstructorGreetingService constructorGreetingService() {
+    //        return new ConstructorGreetingService();
+    //    }
 
     @Bean
     PropertyInjectedGreetingService propertyInjectedGreetingService() {
