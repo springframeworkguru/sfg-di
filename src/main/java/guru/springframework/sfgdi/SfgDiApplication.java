@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
 // Use two base packages in @ComponentScan (otherwise will use this package as the base)
-@ComponentScan(basePackages = {"guru.springframework.sfgdi", "com.springframework.pets"})
+//@ComponentScan(basePackages = {"guru.springframework.sfgdi", "com.springframework.pets"})
 @SpringBootApplication
 public class SfgDiApplication {
 
