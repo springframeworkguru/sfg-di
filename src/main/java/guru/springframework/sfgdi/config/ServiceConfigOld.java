@@ -13,10 +13,10 @@ import org.springframework.context.annotation.*;
  * User: p_sha
  * Date: Thu 18 Mar 2021
  */
-@PropertySource("classpath:datasource.properties")
-@ImportResource("classpath:sfg-di-config.xml")
-@Configuration
-public class GreetingServiceConfig {
+//@PropertySource("classpath:datasource.properties")
+//@ImportResource("classpath:sfg-di-config.xml")
+//@Configuration
+public class ServiceConfigOld {
 
     @Bean
     FakeDataSource fakeDataSource(@Value("${guru.username}") String username,
@@ -86,3 +86,4 @@ public class GreetingServiceConfig {
         return new SetterInjectedGreetingService();
     }
 }
+
