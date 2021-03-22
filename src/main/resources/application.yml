@@ -1,7 +1,28 @@
 spring:
   profiles:
-    active: dog, EN, DEV
+    active:
+      - dog
+      - EN
+      - uat
 guru:
   username: YmlUser
   password: YmlPass
   jdbcurl: YmlUrl
+
+# The three dashes effectively a file seperator
+---
+spring:
+  profiles: prod
+guru:
+  username: YmlProdUser
+  password: YmlProdPass
+  jdbcurl: YmlProdUrl
+
+
+---
+spring:
+  profiles: uat
+guru:
+  username: YmlUATUser
+  password: YmlUATPass
+  jdbcurl: YmlUATUrl
