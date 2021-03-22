@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: dog, EN
+    active: dog, EN, DEV
 guru:
   username: YmlUser
   password: YmlPass
