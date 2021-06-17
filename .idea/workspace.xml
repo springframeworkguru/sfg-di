@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e270292e-7f62-4733-8d4a-c59b7a607138" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1tyQTZ8IVodrvLnfj03GxOINwhf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="guru.springframework.sfgdi.controllers" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="guru.springframework.sfgdi.services" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.SfgDiApplication">
+    <configuration name="SfgDiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="guru.springframework.sfgdi.SfgDiApplication" />
+      <module name="sfg-di" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guru.springframework.sfgdi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConstructorInjectedControllerTest.getGreeting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sfg-di" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guru.springframework.sfgdi.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="guru.springframework.sfgdi.controllers" />
+      <option name="MAIN_CLASS_NAME" value="guru.springframework.sfgdi.controllers.ConstructorInjectedControllerTest" />
+      <option name="METHOD_NAME" value="getGreeting" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PropertyInjectedControllerTest.getGreeting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sfg-di" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guru.springframework.sfgdi.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="guru.springframework.sfgdi.controllers" />
+      <option name="MAIN_CLASS_NAME" value="guru.springframework.sfgdi.controllers.PropertyInjectedControllerTest" />
+      <option name="METHOD_NAME" value="getGreeting" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SetterInjectedControllerTest.getGreeting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sfg-di" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guru.springframework.sfgdi.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="guru.springframework.sfgdi.controllers" />
+      <option name="MAIN_CLASS_NAME" value="guru.springframework.sfgdi.controllers.SetterInjectedControllerTest" />
+      <option name="METHOD_NAME" value="getGreeting" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.ConstructorInjectedControllerTest.getGreeting" />
+      <item itemvalue="JUnit.PropertyInjectedControllerTest.getGreeting" />
+      <item itemvalue="JUnit.SetterInjectedControllerTest.getGreeting" />
+      <item itemvalue="Application.SfgDiApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SfgDiApplication" />
+        <item itemvalue="JUnit.ConstructorInjectedControllerTest.getGreeting" />
+        <item itemvalue="JUnit.PropertyInjectedControllerTest.getGreeting" />
+        <item itemvalue="JUnit.SetterInjectedControllerTest.getGreeting" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e270292e-7f62-4733-8d4a-c59b7a607138" name="Default Changelist" comment="" />
+      <created>1623738857179</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1623738857179</updated>
+    </task>
+    <task id="LOCAL-00001" summary="V39-end">
+      <created>1623750976535</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1623750976535</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="V39-end" />
+    <option name="LAST_COMMIT_MESSAGE" value="V39-end" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="418" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1623916569396">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state x="418" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.0.1920.1055@0.0.1920.1055" timestamp="1623916569396" />
+    <state x="768" y="245" width="376" height="586" key="#com.intellij.ide.util.MemberChooser" timestamp="1623750005443">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state x="768" y="245" width="376" height="586" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.0.1920.1055@0.0.1920.1055" timestamp="1623750005443" />
+    <state x="693" y="288" width="526" height="500" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1623744110357">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state x="693" y="288" width="526" height="500" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1080/0.0.1920.1055@0.0.1920.1055" timestamp="1623744110357" />
+    <state x="743" y="298" width="426" height="479" key="FileChooserDialogImpl" timestamp="1623916347362">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state x="743" y="298" width="426" height="479" key="FileChooserDialogImpl/1920.0.1920.1080/0.0.1920.1055@0.0.1920.1055" timestamp="1623916347362" />
+    <state width="1870" height="356" key="GridCell.Tab.0.bottom" timestamp="1623916559305">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state width="1870" height="356" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.0.1920.1055@0.0.1920.1055" timestamp="1623916559305" />
+    <state width="1870" height="356" key="GridCell.Tab.0.center" timestamp="1623916559305">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state width="1870" height="356" key="GridCell.Tab.0.center/1920.0.1920.1080/0.0.1920.1055@0.0.1920.1055" timestamp="1623916559305" />
+    <state width="1870" height="356" key="GridCell.Tab.0.left" timestamp="1623916559304">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state width="1870" height="356" key="GridCell.Tab.0.left/1920.0.1920.1080/0.0.1920.1055@0.0.1920.1055" timestamp="1623916559304" />
+    <state width="1870" height="356" key="GridCell.Tab.0.right" timestamp="1623916559305">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state width="1870" height="356" key="GridCell.Tab.0.right/1920.0.1920.1080/0.0.1920.1055@0.0.1920.1055" timestamp="1623916559305" />
+    <state x="443" y="118" width="1026" height="840" key="SettingsEditor" timestamp="1623749345967">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state x="443" y="118" width="1026" height="840" key="SettingsEditor/1920.0.1920.1080/0.0.1920.1055@0.0.1920.1055" timestamp="1623749345967" />
+    <state x="555" y="276" width="802" height="524" key="Vcs.Push.Dialog.v2" timestamp="1623751237463">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state x="555" y="276" width="802" height="524" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.0.1920.1055@0.0.1920.1055" timestamp="1623751237463" />
+    <state x="488" y="193" width="936" height="690" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1623744401956">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state x="488" y="193" width="936" height="690" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1080/0.0.1920.1055@0.0.1920.1055" timestamp="1623744401956" />
+    <state x="655" y="351" width="601" height="461" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1623747058040">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state x="655" y="351" width="601" height="461" key="com.intellij.testIntegration.createTest.CreateTestDialog/1920.0.1920.1080/0.0.1920.1055@0.0.1920.1055" timestamp="1623747058040" />
+    <state x="681" y="201" width="549" height="674" key="git4idea.branch.GitSmartOperationDialog" timestamp="1623750904420">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state x="681" y="201" width="549" height="674" key="git4idea.branch.GitSmartOperationDialog/1920.0.1920.1080/0.0.1920.1055@0.0.1920.1055" timestamp="1623750904420" />
+    <state x="640" y="395" key="git4idea.rebase.GitRebaseDialog" timestamp="1623751182048">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state x="640" y="395" key="git4idea.rebase.GitRebaseDialog/1920.0.1920.1080/0.0.1920.1055@0.0.1920.1055" timestamp="1623751182048" />
+    <state x="623" y="248" width="672" height="678" key="run.anything.popup" timestamp="1623749263960">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state x="623" y="248" width="672" height="678" key="run.anything.popup/1920.0.1920.1080/0.0.1920.1055@0.0.1920.1055" timestamp="1623749263960" />
+    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1623749321425">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.0.1920.1055@0.0.1920.1055" timestamp="1623749321425" />
+  </component>
+</project>
