@@ -14,7 +14,7 @@ public class SfgDiApplication {
         ApplicationContext ctx = SpringApplication.run(SfgDiApplication.class, args);
 
         /**
-         * We created the MyController class in the controllers package.  Using the ApplicationContext reference
+         * We  created the MyController class in the controllers package.  Using the ApplicationContext reference
          * we can get the bean for MyController.  Notice, the convention for the bean in a lower case first letter and
          * the class name.  However, this only returns this as an object reference... which is why we cast that
          * object as the MyController type.
