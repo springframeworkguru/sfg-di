@@ -1,2 +1,7 @@
-guru/springframework/sfgdi/controllers/MyController.class
+guru/springframework/sfgdi/controllers/ConstructorInjectedController.class
+guru/springframework/sfgdi/controllers/SetterInjectedController.class
+guru/springframework/sfgdi/controllers/PropertyInjectedController.class
+guru/springframework/sfgdi/services/GreetingServiceImpl.class
+guru/springframework/sfgdi/services/GreetingService.class
 guru/springframework/sfgdi/SfgDiApplication.class
+guru/springframework/sfgdi/controllers/MyController.class
