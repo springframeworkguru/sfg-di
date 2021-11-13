@@ -1,1 +1,4 @@
+/Users/kyungsoo.lee/study/springframework/sfg-di/src/test/java/guru/springframework/sfgdi/controllers/ConstructorInjectedControllerTest.java
+/Users/kyungsoo.lee/study/springframework/sfg-di/src/test/java/guru/springframework/sfgdi/controllers/PropertyInjectedControllerTest.java
+/Users/kyungsoo.lee/study/springframework/sfg-di/src/test/java/guru/springframework/sfgdi/controllers/SetterInjectedControllerTest.java
 /Users/kyungsoo.lee/study/springframework/sfg-di/src/test/java/guru/springframework/sfgdi/SfgDiApplicationTests.java

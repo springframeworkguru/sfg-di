@@ -5,11 +5,11 @@
       <file url="file://$PROJECT_DIR$/src/main/java/guru/springframework/sfgdi/SfgDiApplication.java" />
     </excludeFromCompile>
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="sfg-di" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
