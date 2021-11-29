@@ -1,0 +1,4 @@
+guru/springframework/sfgdi/SfgDiApplicationTests.class
+guru/springframework/sfgdi/controllers/SetterInjectedControllerTest.class
+guru/springframework/sfgdi/controllers/PropertyInjectedControllerTest.class
+guru/springframework/sfgdi/controllers/ConstructorInjectedControllerTest.class
