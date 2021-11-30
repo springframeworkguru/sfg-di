@@ -1,14 +1,13 @@
 package com.samrit.sfgdi.Controller;
 
-import com.samrit.sfgdi.services.PetService;
-import org.springframework.beans.factory.annotation.Qualifier;
+import com.samrit.pets.PetService;
 import org.springframework.stereotype.Controller;
 
 @Controller
 public class PetController {
     private final PetService petService;
 
-    public PetController(@Qualifier("pet")PetService petService) {
+    public PetController(PetService petService) {
         this.petService = petService;
 
     }

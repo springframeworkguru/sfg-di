@@ -1,14 +1,19 @@
 package com.samrit.sfgdi.services;
 
-import org.springframework.context.annotation.Profile;
-import org.springframework.stereotype.Service;
+import com.samrit.sfgdi.repositories.EngilishGreetingRepository;
 
-@Profile({"EN"})
-@Service("I18nService")
+//@Profile({"EN"})
+//@Service("I18nService")
 public class I18nEnglishService implements GreetingService{
+ private final  EngilishGreetingRepository engilishGreetingRepository;
+
+    public I18nEnglishService(EngilishGreetingRepository engilishGreetingRepository) {
+        this.engilishGreetingRepository = engilishGreetingRepository;
+    }
+
 
     @Override
     public String sayGreeting() {
-        return "Hello World -EN";
+        return engilishGreetingRepository.getGreeting();
     }
 }
