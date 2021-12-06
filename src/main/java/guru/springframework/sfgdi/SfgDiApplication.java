@@ -43,9 +43,6 @@ public class SfgDiApplication {
 		System.out.println(fakeDataSource.getPassword());
 		System.out.println(fakeDataSource.getJdbcurl());
 
-		ConstructorInjectedController constructorInjectedController = (ConstructorInjectedController) ctx.getBean(
-				"constructorInjectedController");
-
 		System.out.println(constructorInjectedController.getGreeting());
 
 		System.out.println("------------ Bean Scope");
