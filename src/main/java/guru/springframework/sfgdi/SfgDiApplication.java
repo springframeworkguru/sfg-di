@@ -39,6 +39,7 @@ public class SfgDiApplication {
 				"constructorInjectedController");
 		System.out.println(constructorInjectedController.getGreeting());
 
+		System.out.println("------------ FakeDataSource");
 		FakeDataSource fakeDataSource = ctx.getBean(FakeDataSource.class);
 		System.out.println(fakeDataSource.getUsername());
 		System.out.println(fakeDataSource.getPassword());
