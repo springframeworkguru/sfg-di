@@ -1,0 +1,4 @@
+datasource:
+  username: Qasuperuser
+  password: QadbPassword
+  jdbcurl: QasomeUrlForDB

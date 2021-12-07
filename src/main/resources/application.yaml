@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: EN,cat,dev
+    active: EN,cat,qa
 datasource:
   username: superuser
   password: dbPassword
