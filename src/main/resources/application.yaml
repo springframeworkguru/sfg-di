@@ -1,7 +1,20 @@
 spring:
   profiles:
-    active: EN,cat,qa
+    active:
+      - EN
+      - cat
+      - prod
 datasource:
   username: superuser
   password: dbPassword
   jdbcurl: someUrlForDB
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+datasource:
+  username: Prodsuperuser
+  password: ProddbPassword
+  jdbcurl: ProdsomeUrlForDB
