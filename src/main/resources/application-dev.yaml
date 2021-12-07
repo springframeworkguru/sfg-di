@@ -1,0 +1,4 @@
+datasource:
+  username: Devsuperuser
+  password: DevdbPassword
+  jdbcurl: DevsomeUrlForDB
