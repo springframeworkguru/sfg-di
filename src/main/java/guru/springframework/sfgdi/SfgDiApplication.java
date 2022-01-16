@@ -5,8 +5,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.ImportResource;
 
-@ComponentScan(basePackages = {"guru.springframework.sfgdi","com.springframework.pets","com.springframework.config"})
+@ComponentScan(basePackages = {"guru.springframework.sfgdi","com.springframework"})
+@ImportResource("classpath:sfgdi-config.xml")
 @SpringBootApplication
 public class SfgDiApplication {
 

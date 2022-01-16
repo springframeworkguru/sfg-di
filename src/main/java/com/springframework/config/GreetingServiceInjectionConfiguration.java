@@ -15,10 +15,13 @@ public class GreetingServiceInjectionConfiguration {
         return new ConstructorGreetingService();
     }
 
+/* not necessary added into context by xml
+
     @Bean
     PropertyInjectedGreetingService propertyInjectedGreetingService(){
         return new PropertyInjectedGreetingService();
     }
+*/
 
     @Bean
     SetterInjectedGreetingService setterInjectedGreetingService(){
