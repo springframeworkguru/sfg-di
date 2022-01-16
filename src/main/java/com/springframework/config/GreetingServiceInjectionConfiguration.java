@@ -1,15 +1,19 @@
-package guru.springframework.sfgdi.config;
+package com.springframework.config;
 
-import guru.springframework.sfgdi.controllers.PropertyInjectedController;
-import guru.springframework.sfgdi.controllers.SetterInjectedController;
 import guru.springframework.sfgdi.services.ConstructorGreetingService;
+import guru.springframework.sfgdi.services.PrimaryGreetingService;
 import guru.springframework.sfgdi.services.PropertyInjectedGreetingService;
 import guru.springframework.sfgdi.services.SetterInjectedGreetingService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 @Configuration
-public class GreetingServiceConfiguration {
+public class GreetingServiceInjectionConfiguration {
+    @Bean
+    ConstructorGreetingService constructorGreetingService(){
+        return new ConstructorGreetingService();
+    }
 
     @Bean
     PropertyInjectedGreetingService propertyInjectedGreetingService(){
@@ -21,5 +25,9 @@ public class GreetingServiceConfiguration {
         return new SetterInjectedGreetingService();
     }
 
-
+    @Bean
+    @Primary
+    PrimaryGreetingService primaryGreetingService(){
+        return new PrimaryGreetingService();
+    }
 }
