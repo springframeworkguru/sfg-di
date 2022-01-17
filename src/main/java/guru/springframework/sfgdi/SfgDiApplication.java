@@ -13,7 +13,7 @@ import org.springframework.context.annotation.PropertySource;
 
 @ComponentScan(basePackages = {"guru.springframework.sfgdi","com.springframework"})
 @ImportResource("classpath:sfgdi-config.xml")
-@PropertySource("classpath:dataSourceProperties.txt")
+//@PropertySource("classpath:dataSourceProperties.txt")
 @SpringBootApplication
 public class SfgDiApplication {
 

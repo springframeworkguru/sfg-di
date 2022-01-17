@@ -1,3 +1,2 @@
 fake.userName="Faker"
 fake.password="pass word!"
-fake.jdbcUrl="some url"
