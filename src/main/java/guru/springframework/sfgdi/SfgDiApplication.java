@@ -3,14 +3,17 @@ package guru.springframework.sfgdi;
 import com.springframework.scope.PrototypeBean;
 import com.springframework.scope.SingletonBean;
 import guru.springframework.sfgdi.controllers.*;
+import guru.springframework.sfgdi.fakeDB.FakeDataSource;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ImportResource;
+import org.springframework.context.annotation.PropertySource;
 
 @ComponentScan(basePackages = {"guru.springframework.sfgdi","com.springframework"})
 @ImportResource("classpath:sfgdi-config.xml")
+@PropertySource("classpath:dataSourceProperties.txt")
 @SpringBootApplication
 public class SfgDiApplication {
 
@@ -52,6 +55,16 @@ public class SfgDiApplication {
 		System.out.println(prototypeBean1.getMyScope());
 		PrototypeBean prototypeBean2 = ctx.getBean(PrototypeBean.class);
 		System.out.println(prototypeBean2.getMyScope());
+
+
+
+		System.out.println("---- Property Source ---------");
+		FakeDataSource fakeDataSource = (FakeDataSource) ctx.getBean("fakeDataSource");
+
+		System.out.println(fakeDataSource.getUserName());
+		System.out.println(fakeDataSource.getPassword());
+		System.out.println(fakeDataSource.getJdbcUrl());
+
 
 
 
