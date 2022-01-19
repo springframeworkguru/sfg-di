@@ -1,8 +1,13 @@
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
+<<<<<<< HEAD
 !**/src/main/**/target/
 !**/src/test/**/target/
+=======
+!**/src/main/**
+!**/src/test/**
+>>>>>>> origin/property-source-my
 
 ### STS ###
 .apt_generated
@@ -26,6 +31,7 @@ target/
 /nbdist/
 /.nb-gradle/
 build/
+<<<<<<< HEAD
 !**/src/main/**/build/
 !**/src/test/**/build/
 
@@ -33,3 +39,8 @@ build/
 .vscode/
 /.mvn/wrapper/maven-wrapper.jar
 /.mvn/wrapper/maven-wrapper.properties
+=======
+
+### VS Code ###
+.vscode/
+>>>>>>> origin/property-source-my
