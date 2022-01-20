@@ -9,7 +9,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ImportResource;
-import org.springframework.context.annotation.PropertySource;
 
 @ComponentScan(basePackages = {"guru.springframework.sfgdi","com.springframework"})
 @ImportResource("classpath:sfgdi-config.xml")
@@ -64,6 +63,7 @@ public class SfgDiApplication {
 		System.out.println(fakeDataSource.getUserName());
 		System.out.println(fakeDataSource.getPassword());
 		System.out.println(fakeDataSource.getJdbcUrl());
+
 
 
 

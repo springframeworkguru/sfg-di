@@ -15,11 +15,7 @@
 	<description>Dependency Injection examples</description>
 
 	<properties>
-<<<<<<< HEAD
 		<java.version>17</java.version>
-=======
-		<java.version>11</java.version>
->>>>>>> origin/property-source-my
 	</properties>
 
 	<dependencies>
@@ -32,15 +28,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-<<<<<<< HEAD
-=======
 			<exclusions>
 				<exclusion>
 					<groupId>org.junit.vintage</groupId>
 					<artifactId>junit-vintage-engine</artifactId>
 				</exclusion>
 			</exclusions>
->>>>>>> origin/property-source-my
 		</dependency>
 	</dependencies>
 
