@@ -1,10 +1,5 @@
 package guru.springframework.sfgdi;
 
-<<<<<<< HEAD
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-=======
 import com.springframework.scope.PrototypeBean;
 import com.springframework.scope.SingletonBean;
 import guru.springframework.sfgdi.controllers.*;
@@ -18,15 +13,11 @@ import org.springframework.context.annotation.PropertySource;
 
 @ComponentScan(basePackages = {"guru.springframework.sfgdi","com.springframework"})
 @ImportResource("classpath:sfgdi-config.xml")
-@PropertySource("classpath:dataSourceProperties.txt")
->>>>>>> origin/property-source-my
+//@PropertySource("classpath:dataSourceProperties.txt")
 @SpringBootApplication
 public class SfgDiApplication {
 
 	public static void main(String[] args) {
-<<<<<<< HEAD
-		SpringApplication.run(SfgDiApplication.class, args);
-=======
 		ApplicationContext ctx = SpringApplication.run(SfgDiApplication.class, args);
 
 		PetController petController = ctx.getBean("petController", PetController.class);
@@ -78,7 +69,6 @@ public class SfgDiApplication {
 
 
 
->>>>>>> origin/property-source-my
 	}
 
 }
