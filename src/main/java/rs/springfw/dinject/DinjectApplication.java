@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 import rs.springfw.dinject.controllers.ConstructorInjectedController;
+import rs.springfw.dinject.controllers.I18nController;
 import rs.springfw.dinject.controllers.MyController;
 import rs.springfw.dinject.controllers.PropertyInjectedController;
 import rs.springfw.dinject.controllers.SetterInjectedController;
@@ -16,9 +17,14 @@ public class DinjectApplication {
 		System.out.println("hello spring ");
 		ApplicationContext ctx = SpringApplication.run(DinjectApplication.class, args);
 		
-		MyController myController = (MyController)ctx.getBean("myController");
+		I18nController i18nController = (I18nController)ctx.getBean("i18nController");
+		
+		System.out.println(i18nController.sayHello());
 		
 		System.out.println("----- Primary Bean");
+
+		MyController myController = (MyController)ctx.getBean("myController");
+		
 		System.out.println(myController.sayHello());
 		
 		System.out.println("-----Property");
