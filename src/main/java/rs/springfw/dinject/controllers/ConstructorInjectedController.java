@@ -1,12 +1,16 @@
 package rs.springfw.dinject.controllers;
 
+import org.springframework.stereotype.Controller;
+
 import rs.springfw.dinject.services.GreetingService;
 
-public class ContructorInjectedController {
+@Controller
+public class ConstructorInjectedController {
 
 	private final GreetingService greetingService;
 	
-	public ContructorInjectedController(GreetingService greetingService) {
+//	@Autowired is not required on the constructor
+	public ConstructorInjectedController(GreetingService greetingService) {
 		this.greetingService = greetingService;
 	}
 	

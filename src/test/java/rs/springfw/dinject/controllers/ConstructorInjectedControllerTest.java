@@ -7,11 +7,11 @@ import rs.springfw.dinject.services.GreetingServiceImpl;
 
 public class ConstructorInjectedControllerTest {
 	
-	ContructorInjectedController controller;
+	ConstructorInjectedController controller;
 	
 	@BeforeEach
 	void setUp() {
-		controller = new ContructorInjectedController(new GreetingServiceImpl());
+		controller = new ConstructorInjectedController(new GreetingServiceImpl());
 	}
 	
 	@Test
