@@ -19,11 +19,7 @@
 # ----------------------------------------------------------------------------
 
 # ----------------------------------------------------------------------------
-<<<<<<< HEAD
 # Maven Start Up Batch script
-=======
-# Maven2 Start Up Batch script
->>>>>>> e3d002fabe51a8a6508b70311e9328f05ed1b911
 #
 # Required ENV vars:
 # ------------------
@@ -40,13 +36,10 @@
 
 if [ -z "$MAVEN_SKIP_RC" ] ; then
 
-<<<<<<< HEAD
   if [ -f /usr/local/etc/mavenrc ] ; then
     . /usr/local/etc/mavenrc
   fi
 
-=======
->>>>>>> e3d002fabe51a8a6508b70311e9328f05ed1b911
   if [ -f /etc/mavenrc ] ; then
     . /etc/mavenrc
   fi
@@ -156,11 +149,7 @@ if [ -z "$JAVACMD" ] ; then
       JAVACMD="$JAVA_HOME/bin/java"
     fi
   else
-<<<<<<< HEAD
     JAVACMD="`\\unset -f command; \\command -v java`"
-=======
-    JAVACMD="`which java`"
->>>>>>> e3d002fabe51a8a6508b70311e9328f05ed1b911
   fi
 fi
 
@@ -227,15 +216,9 @@ else
       echo "Couldn't find .mvn/wrapper/maven-wrapper.jar, downloading it ..."
     fi
     if [ -n "$MVNW_REPOURL" ]; then
-<<<<<<< HEAD
       jarUrl="$MVNW_REPOURL/org/apache/maven/wrapper/maven-wrapper/3.1.0/maven-wrapper-3.1.0.jar"
     else
       jarUrl="https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-wrapper/3.1.0/maven-wrapper-3.1.0.jar"
-=======
-      jarUrl="$MVNW_REPOURL/io/takari/maven-wrapper/0.5.5/maven-wrapper-0.5.5.jar"
-    else
-      jarUrl="https://repo.maven.apache.org/maven2/io/takari/maven-wrapper/0.5.5/maven-wrapper-0.5.5.jar"
->>>>>>> e3d002fabe51a8a6508b70311e9328f05ed1b911
     fi
     while IFS="=" read key value; do
       case "$key" in (wrapperUrl) jarUrl="$value"; break ;;
@@ -254,15 +237,9 @@ else
           echo "Found wget ... using wget"
         fi
         if [ -z "$MVNW_USERNAME" ] || [ -z "$MVNW_PASSWORD" ]; then
-<<<<<<< HEAD
             wget "$jarUrl" -O "$wrapperJarPath" || rm -f "$wrapperJarPath"
         else
             wget --http-user=$MVNW_USERNAME --http-password=$MVNW_PASSWORD "$jarUrl" -O "$wrapperJarPath" || rm -f "$wrapperJarPath"
-=======
-            wget "$jarUrl" -O "$wrapperJarPath"
-        else
-            wget --http-user=$MVNW_USERNAME --http-password=$MVNW_PASSWORD "$jarUrl" -O "$wrapperJarPath"
->>>>>>> e3d002fabe51a8a6508b70311e9328f05ed1b911
         fi
     elif command -v curl > /dev/null; then
         if [ "$MVNW_VERBOSE" = true ]; then
@@ -273,11 +250,7 @@ else
         else
             curl --user $MVNW_USERNAME:$MVNW_PASSWORD -o "$wrapperJarPath" "$jarUrl" -f
         fi
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> e3d002fabe51a8a6508b70311e9328f05ed1b911
     else
         if [ "$MVNW_VERBOSE" = true ]; then
           echo "Falling back to using Java to download"
@@ -336,13 +309,8 @@ WRAPPER_LAUNCHER=org.apache.maven.wrapper.MavenWrapperMain
 
 exec "$JAVACMD" \
   $MAVEN_OPTS \
-<<<<<<< HEAD
   $MAVEN_DEBUG_OPTS \
   -classpath "$MAVEN_PROJECTBASEDIR/.mvn/wrapper/maven-wrapper.jar" \
   "-Dmaven.home=${M2_HOME}" \
   "-Dmaven.multiModuleProjectDirectory=${MAVEN_PROJECTBASEDIR}" \
-=======
-  -classpath "$MAVEN_PROJECTBASEDIR/.mvn/wrapper/maven-wrapper.jar" \
-  "-Dmaven.home=${M2_HOME}" "-Dmaven.multiModuleProjectDirectory=${MAVEN_PROJECTBASEDIR}" \
->>>>>>> e3d002fabe51a8a6508b70311e9328f05ed1b911
   ${WRAPPER_LAUNCHER} $MAVEN_CONFIG "$@"
