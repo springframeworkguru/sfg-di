@@ -1,6 +1,6 @@
 package com.spring.dependency_injection.controllers;
 
-import com.spring.dependency_injection.services.GreetingsServiceImpl;
+import com.spring.dependency_injection.services.ConstructorGreetingsServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -10,7 +10,7 @@ class ConstructorInjectedControllerTest {
 
     @BeforeEach
     void setUp() {
-        controller = new ConstructorInjectedController(new GreetingsServiceImpl());
+        controller = new ConstructorInjectedController(new ConstructorGreetingsServiceImpl());
     }
 
     @Test
