@@ -1,6 +1,7 @@
 package com.spring.dependency_injection;
 
 import com.spring.dependency_injection.controllers.*;
+import com.spring.dependency_injection.datasource.FakeDataSource;
 import com.spring.dependency_injection.services.PrototypeBean;
 import com.spring.dependency_injection.services.SingletonBean;
 import org.springframework.boot.SpringApplication;
@@ -56,6 +57,13 @@ public class DependencyInjectionApplication {
         System.out.println(prototypeBean1.getMyScope());
         PrototypeBean prototypeBean2 = ctx.getBean(PrototypeBean.class);
         System.out.println(prototypeBean2.getMyScope());
+        System.out.println();
+
+        System.out.println("### Fake Data Source ###");
+        FakeDataSource fakeDataSource = ctx.getBean(FakeDataSource.class);
+        System.out.println(fakeDataSource.getUsername());
+        System.out.println(fakeDataSource.getPassword());
+        System.out.println(fakeDataSource.getJdbcUrl());
     }
 
 }

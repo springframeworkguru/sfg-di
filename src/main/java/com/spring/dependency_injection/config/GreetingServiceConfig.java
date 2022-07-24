@@ -1,17 +1,27 @@
 package com.spring.dependency_injection.config;
 
+import com.spring.dependency_injection.datasource.FakeDataSource;
 import com.spring.dependency_injection.repositories.EnglishGreetingRepository;
 import com.spring.dependency_injection.repositories.EnglishGreetingRepositoryImpl;
 import com.spring.dependency_injection.services.*;
 import org.spring.pets.PetService;
 import org.spring.pets.PetServiceFactory;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
-import org.springframework.context.annotation.Profile;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.*;
 
+@PropertySource("classpath:datasource.properties")
 @Configuration
 public class GreetingServiceConfig {
+
+    @Bean
+    FakeDataSource fakeDataSource(@Value("${username}") String username, @Value("${password}") String password, @Value("${jdbcUrl}")String jdbcUrl) {
+        FakeDataSource fakeDataSource = new FakeDataSource();
+        fakeDataSource.setUsername(username);
+        fakeDataSource.setPassword(password);
+        fakeDataSource.setJdbcUrl(jdbcUrl);
+        return fakeDataSource;
+    }
+
     @Bean
     PetServiceFactory petServiceFactory() {
         return new PetServiceFactory();
