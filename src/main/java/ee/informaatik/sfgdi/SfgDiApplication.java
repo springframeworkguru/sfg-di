@@ -1,16 +1,24 @@
 package ee.informaatik.sfgdi;
 
+<<<<<<< HEAD
 import ee.informaatik.sfgdi.controllers.*;
+=======
+import ee.informaatik.sfgdi.controllers.MyController;
+>>>>>>> master
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> master
 @SpringBootApplication
 public class SfgDiApplication {
 
 	public static void main(String[] args) {
+<<<<<<< HEAD
 		ApplicationContext ctx = SpringApplication.run(SfgDiApplication.class, args);
 
 		PetController petController = ctx.getBean("petController", PetController.class);
@@ -36,6 +44,14 @@ public class SfgDiApplication {
 		System.out.println("-------- Constructor" );
 		ConstructorInjectedController constructorInjectedController = (ConstructorInjectedController) ctx.getBean("constructorInjectedController");
 		System.out.println(constructorInjectedController.getGreeting());
+=======
+
+		ApplicationContext ctx = SpringApplication.run(SfgDiApplication.class, args);
+
+		MyController myController = (MyController) ctx.getBean("myController");
+		String greeting = myController.sayHello();
+		System.out.println(greeting);
+>>>>>>> master
 	}
 
 }
