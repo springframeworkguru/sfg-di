@@ -1,6 +1,5 @@
 package ee.informaatik.sfgdi.controllers;
 
-<<<<<<< HEAD
 import ee.informaatik.sfgdi.services.GreetingService;
 import org.springframework.stereotype.Controller;
 
@@ -20,15 +19,5 @@ public class MyController {
         return greetingService.sayGreeting();
     }
 }
-=======
-import org.springframework.stereotype.Controller;
 
-@Controller
-public class MyController {
 
-    public String sayHello(){
-        System.out.println("Hello Taavi!");
-        return "Hi Folks!";
-    }
-}
->>>>>>> master
