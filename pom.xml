@@ -12,7 +12,7 @@
 	<artifactId>sfg-di</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>sfg-di</name>
-	<description>Dependecy Injection</description>
+	<description>Dependency Injection</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
