@@ -2,14 +2,31 @@ package ee.informaatik.sfgdi.config;
 
 import ee.informaatik.pets.PetService;
 import ee.informaatik.pets.PetServiceFactory;
+import ee.informaatik.sfgdi.datasource.FakeDataSource;
 import ee.informaatik.sfgdi.repositories.EnglishGreetingRepository;
 import ee.informaatik.sfgdi.repositories.EnglishGreetingRepositoryImpl;
 import ee.informaatik.sfgdi.services.*;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.*;
 
+
+@PropertySource("classpath:datasource.properties")
 @ImportResource("classpath:sfgdi-config.xml")
 @Configuration
 public class GreetingServiceConfig {
+
+    @Bean
+    FakeDataSource fakeDataSource(@Value("${informaatik.username}") String username,
+                                  @Value("${informaatik.password}")String password,
+                                  @Value("${informaatik.jdbcurl}")String jdbcurl) {
+        FakeDataSource fakeDataSource = new FakeDataSource();
+        fakeDataSource.setUserName(username);
+        fakeDataSource.setPassword(password);
+        fakeDataSource.setJdbcurl(jdbcurl);
+
+        return fakeDataSource;
+    }
+
 
     @Bean
     PetServiceFactory petServiceFactory() {
