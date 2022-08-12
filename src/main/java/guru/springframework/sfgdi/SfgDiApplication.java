@@ -1,6 +1,9 @@
 package guru.springframework.sfgdi;
 
+import guru.springframework.sfgdi.controllers.ConstructorInjectedController;
 import guru.springframework.sfgdi.controllers.MyController;
+import guru.springframework.sfgdi.controllers.PropertyInjectionController;
+import guru.springframework.sfgdi.controllers.SetterInjectedController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -10,13 +13,31 @@ public class SfgDiApplication {
 
     public static void main(String[] args) {
 
-        ApplicationContext applicationContext = SpringApplication.run(SfgDiApplication.class, args);
+        ApplicationContext context = SpringApplication.run(SfgDiApplication.class, args);
 
-        MyController myController = (MyController) applicationContext.getBean("myController");
+        MyController myController = (MyController) context.getBean("myController");
 
         String greeting = myController.sayHello();
 
         System.out.println(greeting);
+
+        System.out.println("------------ Property ");
+
+        PropertyInjectionController propertyInjectionController = (PropertyInjectionController) context.getBean("propertyInjectionController");
+
+        System.out.println(propertyInjectionController.getGreeting());
+
+        System.out.println("------------ Setter ");
+
+        SetterInjectedController setterInjectedController = (SetterInjectedController) context.getBean("setterInjectedController");
+
+        System.out.println(setterInjectedController.getGreeting());
+
+        System.out.println("------------ Constructor ");
+
+        ConstructorInjectedController constructorInjectedController = (ConstructorInjectedController) context.getBean("constructorInjectedController");
+
+        System.out.println(constructorInjectedController.getGreeting());
     }
 
 }

@@ -1,8 +1,11 @@
 package guru.springframework.sfgdi.services;
 
+import org.springframework.stereotype.Service;
+
 /**
  * Created by vladi on 12/08/2022
  **/
+@Service
 public class GreetingServiceImpl implements GreetingService {
     @Override
     public String sayGreeting() {
