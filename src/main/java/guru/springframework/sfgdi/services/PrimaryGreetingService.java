@@ -13,4 +13,8 @@ public class PrimaryGreetingService implements GreetingService{
     public String sayGreeting() {
         return "Hello World - From the PRIMARY Bean!";
     }
+
+    public void myPrimaryBeforeInit() {
+        System.out.println("## - PrimaryGreetingService :: Before Init - Called by Bean Post Processor");
+    }
 }
