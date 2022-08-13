@@ -7,13 +7,13 @@ import org.junit.jupiter.api.Test;
 /**
  * Created by vladi on 12/08/2022
  **/
-class PropertyInjectionControllerTest {
+class PropertyInjectedControllerTest {
 
-    PropertyInjectionController controller;
+    PropertyInjectedController controller;
 
     @BeforeEach
     void setUp() {
-        controller = new PropertyInjectionController();
+        controller = new PropertyInjectedController();
         controller.greetingService = new PropertyGreetingService();
     }
 
