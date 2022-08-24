@@ -1,5 +1,6 @@
 package guru.springframework.sfgdi;
 
+import guru.springframework.sfgdi.config.SfgPropertyConfiguration;
 import guru.springframework.sfgdi.controllers.*;
 import guru.springframework.sfgdi.datasource.FakeDataSource;
 import org.springframework.boot.SpringApplication;
@@ -36,10 +37,19 @@ public class SfgDiApplication {
 		ConstructorInjectedController constructorInjectedController = (ConstructorInjectedController) ctx.getBean("constructorInjectedController");
 		System.out.println(constructorInjectedController.getGreeting());
 
+		System.out.println("------------- env Profile ----------------");
 		FakeDataSource fakeDataSource = ctx.getBean(FakeDataSource.class);
 		System.out.println(fakeDataSource.getUsername());
 		System.out.println(fakeDataSource.getPassword());
 		System.out.println(fakeDataSource.getJdbcURL());
+
+
+		System.out.println("------------- Configuration Binding ----------------");
+		SfgPropertyConfiguration sfgPropertyConfiguration = ctx.getBean(SfgPropertyConfiguration.class);
+		System.out.println(sfgPropertyConfiguration.getUsername());
+		System.out.println(sfgPropertyConfiguration.getPassword());
+		System.out.println(sfgPropertyConfiguration.getJdbcURL());
+
 	}
 
 }
