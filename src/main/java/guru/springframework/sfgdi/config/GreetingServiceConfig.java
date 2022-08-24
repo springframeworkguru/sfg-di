@@ -26,11 +26,8 @@ public class GreetingServiceConfig {
         FakeDataSource fakeDataSource = new FakeDataSource();
 
         fakeDataSource.setUsername(username);
-        System.out.println(fakeDataSource.getUsername());
         fakeDataSource.setPassword(password);
-        System.out.println(fakeDataSource.getPassword());
         fakeDataSource.setJdbcURL(jdbcURL);
-        System.out.println(fakeDataSource.getJdbcURL());
 
         return fakeDataSource;
     }
