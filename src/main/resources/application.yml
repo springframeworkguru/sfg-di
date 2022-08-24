@@ -2,6 +2,6 @@ spring:
   profiles:
     active: dog,EN,qa
 guru:
-  username: superuser
-  password: dbPassword
-  jdbcURL: someURL
+  username: superuserYML
+  password: dbPasswordYML
+  jdbcURL: someURLYML
