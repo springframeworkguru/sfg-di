@@ -21,12 +21,12 @@ public class GreetingServiceConfig {
         return new PetServiceFactory();
     }
     @Profile({"dog", "default"})
-    @Bean
+    @Bean("petService")
     PetService dogPetService(PetServiceFactory petServiceFactory){
         return petServiceFactory.getPetService("dog");
     }
 
-    @Bean
+    @Bean("petService")
     @Profile("cat")
     PetService catPetService(PetServiceFactory petServiceFactory){
         return petServiceFactory.getPetService("cat");
