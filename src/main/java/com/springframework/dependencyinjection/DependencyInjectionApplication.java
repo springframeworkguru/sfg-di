@@ -1,6 +1,6 @@
 package com.springframework.dependencyinjection;
 
-import com.springframework.dependencyinjection.controllers.MyController;
+import com.springframework.dependencyinjection.controllers.ConstructorInjectedController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -12,9 +12,9 @@ public class DependencyInjectionApplication {
 
 		ApplicationContext ctx =  SpringApplication.run(DependencyInjectionApplication.class, args);
 
-		MyController myController = (MyController) ctx.getBean("myController");
+		ConstructorInjectedController constructorInjectedController = (ConstructorInjectedController) ctx.getBean("constructorInjectedController");
 
-		String greeting = myController.sayHello();
+		String greeting = constructorInjectedController.getGreeting();
 
 		System.out.println(greeting);
 	}
