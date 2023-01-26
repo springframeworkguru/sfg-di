@@ -1,10 +1,13 @@
 package Dependancy.sfgdi;
 
+import Dependancy.sfgdi.controllers.PetController;
 import Dependancy.sfgdi.controllers.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
+@ComponentScan(basePackages = {"Dependancy.sfgdi","Dependancy.pets"})
 @SpringBootApplication
 public class SfgDiApplication {
 
@@ -30,6 +33,10 @@ public class SfgDiApplication {
 		System.out.println("--------------------------I18nController------------------------------");
 		I18nController i18nController = (I18nController) ctx.getBean("i18nController");
 		System.out.println(i18nController.sayHello());
+
+		PetController petController = (PetController)ctx.getBean("petController");
+		System.out.println("--- The Best Pet is ---");
+		System.out.println(petController.whichPetIsTheBest());
 	}
 
 }
