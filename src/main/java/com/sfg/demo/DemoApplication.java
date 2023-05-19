@@ -1,5 +1,6 @@
 package com.sfg.demo;
 
+import com.sfg.demo.controller.ConstructorInjectedController;
 import com.sfg.demo.controller.MyController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,6 +15,12 @@ public class DemoApplication {
 		String msg = myController.sayHello();
 
         System.out.println(msg);
+
+
+		ConstructorInjectedController constructorInjectedController = (ConstructorInjectedController) ctx.getBean("constructorInjectedController");
+		String msg1 = constructorInjectedController.getGreetings();
+		System.out.println(msg1);
+
 	}
 
 }
