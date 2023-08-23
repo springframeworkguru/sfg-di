@@ -1,9 +1,12 @@
 package guru.springframework.sfgdi.config;
 
+
 import guru.springframework.pets.CatPetService;
 import guru.springframework.pets.DogPetService;
 import guru.springframework.pets.PetService;
 import guru.springframework.pets.PetServiceFactory;
+import guru.springframework.sfgdi.repositories.EnglishGreetingRepository;
+import guru.springframework.sfgdi.repositories.EnglishGreetingRepositoryImpl;
 import guru.springframework.sfgdi.services.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -34,16 +37,26 @@ public class GreetingServiceConfiguration {
         return new PrimaryGreetingService();
     }
 
+
     @Profile({"ES", "default"})
     @Bean(name = "i18nService")
     I18NSpanishService i18NSpanishService() {
         return new I18NSpanishService();
     }
 
+
     @Profile("EN")
     @Bean
     I18nEnglishGreetingService i18nService() {
         return new I18nEnglishGreetingService();
+    @Bean
+    EnglishGreetingRepository englishGreetingRepository(){
+        return new EnglishGreetingRepositoryImpl();
+    }
+    @Profile("EN")
+    @Bean
+    I18nEnglishGreetingService i18nService(){
+        return new I18nEnglishGreetingService(englishGreetingRepository());
     }
 
     @Bean
