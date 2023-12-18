@@ -1,9 +1,6 @@
 package marinemaks.mmdi;
 
-import marinemaks.mmdi.controllers.ConstructorInjectedController;
-import marinemaks.mmdi.controllers.MyController;
-import marinemaks.mmdi.controllers.PropertyInjectedController;
-import marinemaks.mmdi.controllers.SetterInjectedController;
+import marinemaks.mmdi.controllers.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -36,6 +33,10 @@ public class MmDiApplication {
 		System.out.println("---------- Bean");
 		MyController myControllerBean = (MyController) ctx.getBean("myController");
 		System.out.println(myControllerBean.sayHello());
+
+		System.out.println("---------- i18n");
+		I18nController i18nController = (I18nController) ctx.getBean("i18nController");
+		System.out.println(i18nController.sayHello());
 
 	}
 
