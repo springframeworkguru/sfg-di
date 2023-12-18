@@ -3,9 +3,9 @@ package marinemaks.mmdi.services;
 import org.springframework.stereotype.Service;
 
 @Service
-public class GreetingServiceImpl implements GreetingService {
+public class GoodbyeWorldGreetingService implements GreetingService {
     @Override
     public String sayGreeting() {
-        return "Hello World!";
+        return "Goodbye World!";
     }
 }

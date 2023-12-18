@@ -1,6 +1,6 @@
 package marinemaks.mmdi.controllers;
 
-import marinemaks.mmdi.services.GreetingServiceImpl;
+import marinemaks.mmdi.services.HelloWorldGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -12,7 +12,7 @@ class ConstructorInjectedControllerTest {
 
     @BeforeEach
     void setUp() {
-        controller = new ConstructorInjectedController(new GreetingServiceImpl());
+        controller = new ConstructorInjectedController(new HelloWorldGreetingService());
     }
 
     @Test
