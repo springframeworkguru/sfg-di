@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="marinemaks.mmdi.MmDiApplicationTests" time="1.02" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="marinemaks.mmdi.MmDiApplicationTests" time="0.918" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="/Users/mariia.maksimova/.sdkman/candidates/java/17.0.2-zulu/zulu-17.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/mariia.maksimova/Courses/mm-di/target/surefire/surefirebooter-20231217211646262_3.jar /Users/mariia.maksimova/Courses/mm-di/target/surefire 2023-12-17T21-16-46_150-jvmRun1 surefire-20231217211646262_1tmp surefire_0-20231217211646262_2tmp"/>
+    <property name="sun.java.command" value="/Users/mariia.maksimova/Courses/mm-di/target/surefire/surefirebooter-20231218234202690_3.jar /Users/mariia.maksimova/Courses/mm-di/target/surefire 2023-12-18T23-42-02_640-jvmRun1 surefire-20231218234202690_1tmp surefire_0-20231218234202690_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/mariia.maksimova/Courses/mm-di/target/test-classes:/Users/mariia.maksimova/Courses/mm-di/target/classes:/Users/mariia.maksimova/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.0/spring-boot-starter-3.2.0.jar:/Users/mariia.maksimova/.m2/repository/org/springframework/boot/spring-boot/3.2.0/spring-boot-3.2.0.jar:/Users/mariia.maksimova/.m2/repository/org/springframework/spring-context/6.1.1/spring-context-6.1.1.jar:/Users/mariia.maksimova/.m2/repository/org/springframework/spring-aop/6.1.1/spring-aop-6.1.1.jar:/Users/mariia.maksimova/.m2/repository/org/springframework/spring-beans/6.1.1/spring-beans-6.1.1.jar:/Users/mariia.maksimova/.m2/repository/org/springframework/spring-expression/6.1.1/spring-expression-6.1.1.jar:/Users/mariia.maksimova/.m2/repository/io/micrometer/micrometer-observation/1.12.0/micrometer-observation-1.12.0.jar:/Users/mariia.maksimova/.m2/repository/io/micrometer/micrometer-commons/1.12.0/micrometer-commons-1.12.0.jar:/Users/mariia.maksimova/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.0/spring-boot-autoconfigure-3.2.0.jar:/Users/mariia.maksimova/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.0/spring-boot-starter-logging-3.2.0.jar:/Users/mariia.maksimova/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/Users/mariia.maksimova/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/Users/mariia.maksimova/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/Users/mariia.maksimova/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/Users/mariia.maksimova/.m2/repository/org/slf4j/jul-to-slf4j/2.0.9/jul-to-slf4j-2.0.9.jar:/Users/mariia.maksimova/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/mariia.maksimova/.m2/repository/org/springframework/spring-core/6.1.1/spring-core-6.1.1.jar:/Users/mariia.maksimova/.m2/repository/org/springframework/spring-jcl/6.1.1/spring-jcl-6.1.1.jar:/Users/mariia.maksimova/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/mariia.maksimova/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.0/spring-boot-starter-test-3.2.0.jar:/Users/mariia.maksimova/.m2/repository/org/springframework/boot/spring-boot-test/3.2.0/spring-boot-test-3.2.0.jar:/Users/mariia.maksimova/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.0/spring-boot-test-autoconfigure-3.2.0.jar:/Users/mariia.maksimova/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/Users/mariia.maksimova/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/mariia.maksimova/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.1/jakarta.xml.bind-api-4.0.1.jar:/Users/mariia.maksimova/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/Users/mariia.maksimova/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/Users/mariia.maksimova/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/Users/mariia.maksimova/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/Users/mariia.maksimova/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/Users/mariia.maksimova/.m2/repository/net/bytebuddy/byte-buddy/1.14.10/byte-buddy-1.14.10.jar:/Users/mariia.maksimova/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/Users/mariia.maksimova/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/mariia.maksimova/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar:/Users/mariia.maksimova/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.1/junit-jupiter-api-5.10.1.jar:/Users/mariia.maksimova/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/mariia.maksimova/.m2/repository/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar:/Users/mariia.maksimova/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/mariia.maksimova/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar:/Users/mariia.maksimova/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.jar:/Users/mariia.maksimova/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/Users/mariia.maksimova/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/Users/mariia.maksimova/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.10/byte-buddy-agent-1.14.10.jar:/Users/mariia.maksimova/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/mariia.maksimova/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/Users/mariia.maksimova/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/Users/mariia.maksimova/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/mariia.maksimova/.m2/repository/org/springframework/spring-test/6.1.1/spring-test-6.1.1.jar:/Users/mariia.maksimova/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <property name="java.awt.headless" value="true"/>
-    <property name="surefire.real.class.path" value="/Users/mariia.maksimova/Courses/mm-di/target/surefire/surefirebooter-20231217211646262_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/mariia.maksimova/Courses/mm-di/target/surefire/surefirebooter-20231218234202690_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.2+8-LTS"/>
     <property name="user.name" value="mariia.maksimova"/>
@@ -48,7 +48,7 @@
     <property name="user.dir" value="/Users/mariia.maksimova/Courses/mm-di"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="94418"/>
+    <property name="PID" value="32880"/>
     <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/mariia.maksimova/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
@@ -58,9 +58,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="contextLoads" classname="marinemaks.mmdi.MmDiApplicationTests" time="0.493">
-    <system-out><![CDATA[21:16:46.696 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [marinemaks.mmdi.MmDiApplicationTests]: MmDiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-21:16:46.749 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration marinemaks.mmdi.MmDiApplication for test class marinemaks.mmdi.MmDiApplicationTests
+  <testcase name="contextLoads" classname="marinemaks.mmdi.MmDiApplicationTests" time="0.429">
+    <system-out><![CDATA[23:42:03.079 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [marinemaks.mmdi.MmDiApplicationTests]: MmDiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:42:03.122 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration marinemaks.mmdi.MmDiApplication for test class marinemaks.mmdi.MmDiApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -70,9 +70,9 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.0)
 
-2023-12-17T21:16:46.900Z  INFO 94418 --- [           main] marinemaks.mmdi.MmDiApplicationTests     : Starting MmDiApplicationTests using Java 17.0.2 with PID 94418 (started by mariia.maksimova in /Users/mariia.maksimova/Courses/mm-di)
-2023-12-17T21:16:46.901Z  INFO 94418 --- [           main] marinemaks.mmdi.MmDiApplicationTests     : No active profile set, falling back to 1 default profile: "default"
-2023-12-17T21:16:47.110Z  INFO 94418 --- [           main] marinemaks.mmdi.MmDiApplicationTests     : Started MmDiApplicationTests in 0.31 seconds (process running for 0.786)
+2023-12-18T23:42:03.278Z  INFO 32880 --- [           main] marinemaks.mmdi.MmDiApplicationTests     : Starting MmDiApplicationTests using Java 17.0.2 with PID 32880 (started by mariia.maksimova in /Users/mariia.maksimova/Courses/mm-di)
+2023-12-18T23:42:03.280Z  INFO 32880 --- [           main] marinemaks.mmdi.MmDiApplicationTests     : The following 2 profiles are active: "cat", "ES"
+2023-12-18T23:42:03.491Z  INFO 32880 --- [           main] marinemaks.mmdi.MmDiApplicationTests     : Started MmDiApplicationTests in 0.321 seconds (process running for 0.759)
 ]]></system-out>
   </testcase>
 </testsuite>

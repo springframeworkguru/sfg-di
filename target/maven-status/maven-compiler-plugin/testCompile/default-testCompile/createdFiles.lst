@@ -1,1 +1,4 @@
+marinemaks/mmdi/controllers/PropertyInjectedControllerTest.class
 marinemaks/mmdi/MmDiApplicationTests.class
+marinemaks/mmdi/controllers/SetterInjectedControllerTest.class
+marinemaks/mmdi/controllers/ConstructorInjectedControllerTest.class

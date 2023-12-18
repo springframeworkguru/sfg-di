@@ -11,10 +11,13 @@ public class MmDiApplication {
 	public static void main(String[] args) {
 
 		ApplicationContext ctx = SpringApplication.run(MmDiApplication.class, args);
+
+		PetController petController = ctx.getBean("petController", PetController.class);
+		System.out.println("--- The Best Pet is ---");
+		System.out.println(petController.whichPetIsTheBest());
+
 		MyController myController = (MyController) ctx.getBean("myController");
-
 		String greeting = myController.sayHello();
-
 		System.out.println(greeting);
 
 		System.out.println("---------- Property");

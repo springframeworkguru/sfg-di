@@ -1,1 +1,16 @@
+/Users/mariia.maksimova/Courses/mm-di/src/main/java/marinemaks/mmdi/controllers/I18nController.java
+/Users/mariia.maksimova/Courses/mm-di/src/main/java/marinemaks/mmdi/services/PetService.java
+/Users/mariia.maksimova/Courses/mm-di/src/main/java/marinemaks/mmdi/controllers/MyController.java
+/Users/mariia.maksimova/Courses/mm-di/src/main/java/marinemaks/mmdi/services/PrimaryGreetingService.java
+/Users/mariia.maksimova/Courses/mm-di/src/main/java/marinemaks/mmdi/services/CatPetService.java
+/Users/mariia.maksimova/Courses/mm-di/src/main/java/marinemaks/mmdi/controllers/SetterInjectedController.java
+/Users/mariia.maksimova/Courses/mm-di/src/main/java/marinemaks/mmdi/services/GreetingService.java
 /Users/mariia.maksimova/Courses/mm-di/src/main/java/marinemaks/mmdi/MmDiApplication.java
+/Users/mariia.maksimova/Courses/mm-di/src/main/java/marinemaks/mmdi/controllers/PropertyInjectedController.java
+/Users/mariia.maksimova/Courses/mm-di/src/main/java/marinemaks/mmdi/controllers/ConstructorInjectedController.java
+/Users/mariia.maksimova/Courses/mm-di/src/main/java/marinemaks/mmdi/services/I18nEnglishGreetingService.java
+/Users/mariia.maksimova/Courses/mm-di/src/main/java/marinemaks/mmdi/services/I18nSpanishGreetingService.java
+/Users/mariia.maksimova/Courses/mm-di/src/main/java/marinemaks/mmdi/services/HelloWorldGreetingService.java
+/Users/mariia.maksimova/Courses/mm-di/src/main/java/marinemaks/mmdi/services/GoodbyeWorldGreetingService.java
+/Users/mariia.maksimova/Courses/mm-di/src/main/java/marinemaks/mmdi/services/DogPetService.java
+/Users/mariia.maksimova/Courses/mm-di/src/main/java/marinemaks/mmdi/controllers/PetController.java
