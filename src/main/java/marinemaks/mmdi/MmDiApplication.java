@@ -33,6 +33,10 @@ public class MmDiApplication {
 		ConstructorInjectedController constructorInjectedController = (ConstructorInjectedController) ctx.getBean("constructorInjectedController");
 		System.out.println(constructorInjectedController.getGreeting());
 
+		System.out.println("---------- Bean");
+		MyController myControllerBean = (MyController) ctx.getBean("myController");
+		System.out.println(myControllerBean.sayHello());
+
 	}
 
 }
