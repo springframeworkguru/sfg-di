@@ -5,6 +5,9 @@ public class FakeDataSource {
     private String password;
     private String dburl;
 
+    public FakeDataSource() {
+    }
+
     public String getUsername() {
         return username;
     }
