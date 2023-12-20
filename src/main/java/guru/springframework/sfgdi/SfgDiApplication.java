@@ -52,7 +52,7 @@ public class SfgDiApplication {
 		PrototypeBean prototypeBean1= (PrototypeBean) ctx.getBean("prototypeBean");
 		System.out.println(prototypeBean1.getMyScope());
 
-		System.out.println("-------- Using propertie source" );
+		System.out.println("-------- Using External Properties" );
 		FakeDataSource fakeDataSource=(FakeDataSource) ctx.getBean("fakeDataSource");
 		System.out.println(fakeDataSource.getUsername());
 		System.out.println(fakeDataSource.getPassword());

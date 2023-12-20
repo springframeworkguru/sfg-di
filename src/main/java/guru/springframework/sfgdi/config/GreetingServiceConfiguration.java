@@ -1,8 +1,6 @@
 package guru.springframework.sfgdi.config;
 
 
-import guru.springframework.pets.CatPetService;
-import guru.springframework.pets.DogPetService;
 import guru.springframework.pets.PetService;
 import guru.springframework.pets.PetServiceFactory;
 import guru.springframework.sfgdi.datasource.FakeDataSource;
@@ -13,15 +11,17 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.*;
 
 @PropertySource("classpath:datasource.properties")
+/*
 @ImportResource("classpath:sdgdi-config.xml")
+*/
 @Configuration
 public class GreetingServiceConfiguration {
 
     @Bean
-    FakeDataSource fakeDataSource(@Value("${skm.username}")String username,
-            @Value("${skm.password}") String password,
-     @Value("${skm.dburl}") String dburl ){
-        FakeDataSource fakeDataSource=new FakeDataSource();
+    FakeDataSource fakeDataSource(@Value("${skm.username}") String username,
+                                  @Value("${skm.password}") String password,
+                                  @Value("${skm.jdbcurl}") String dburl) {
+        FakeDataSource fakeDataSource = new FakeDataSource();
         fakeDataSource.setUsername(username);
         fakeDataSource.setPassword(password);
         fakeDataSource.setDburl(dburl);
@@ -29,7 +29,7 @@ public class GreetingServiceConfiguration {
     }
 
 
-    //@Bean
+    @Bean
     ConstructorGreetingService constructorGreetingService() {
         return new ConstructorGreetingService();
     }
@@ -63,8 +63,9 @@ public class GreetingServiceConfiguration {
     I18nEnglishGreetingService i18nService() {
         return new I18nEnglishGreetingService(englishGreetingRepository());
     }
+
     @Bean
-    EnglishGreetingRepository englishGreetingRepository(){
+    EnglishGreetingRepository englishGreetingRepository() {
         return new EnglishGreetingRepositoryImpl();
     }
 
