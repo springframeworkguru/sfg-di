@@ -1,11 +1,13 @@
-package marinemaks.mmdi;
+package mm.di;
 
-import marinemaks.mmdi.controllers.*;
+import mm.di.controllers.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+@ComponentScan(basePackages = {"mm.di", "mm.pets"})
 public class MmDiApplication {
 
 	public static void main(String[] args) {

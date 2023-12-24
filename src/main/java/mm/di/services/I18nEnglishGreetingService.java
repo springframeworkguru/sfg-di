@@ -1,4 +1,4 @@
-package marinemaks.mmdi.services;
+package mm.di.services;
 
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;

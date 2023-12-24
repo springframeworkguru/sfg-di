@@ -1,6 +1,6 @@
-package marinemaks.mmdi.controllers;
+package mm.di.controllers;
 
-import marinemaks.mmdi.services.GreetingService;
+import mm.di.services.GreetingService;
 import org.springframework.stereotype.Controller;
 
 @Controller

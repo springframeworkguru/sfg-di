@@ -1,4 +1,4 @@
-package marinemaks.mmdi.services;
+package mm.pets.services;
 
 public interface PetService {
 

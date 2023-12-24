@@ -1,7 +1,6 @@
-package marinemaks.mmdi.controllers;
+package mm.di.controllers;
 
-import marinemaks.mmdi.services.GreetingService;
-import org.springframework.beans.factory.annotation.Autowired;
+import mm.di.services.GreetingService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 

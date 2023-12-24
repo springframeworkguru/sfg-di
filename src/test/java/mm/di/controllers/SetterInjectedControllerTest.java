@@ -1,6 +1,6 @@
-package marinemaks.mmdi.controllers;
+package mm.di.controllers;
 
-import marinemaks.mmdi.services.HelloWorldGreetingService;
+import mm.di.services.HelloWorldGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

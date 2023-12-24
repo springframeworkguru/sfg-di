@@ -1,4 +1,4 @@
-package marinemaks.mmdi.services;
+package mm.di.services;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
